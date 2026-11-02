@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>TamaaStore – Toko Aksesoris & Hardware Gaming</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="wrap bar">
+    <a class="logo" href="#beranda">Tamaa<b>Store</b></a>
+    <nav class="nav" aria-label="Menu utama">
+      <a href="#beranda">Beranda</a>
+      <a href="#produk">Produk</a>
+      <a href="#tentang">Tentang</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+    <button class="ib" id="theme" aria-label="Ganti tema">🌓</button>
+    <button class="ib" id="openCart" aria-label="Buka keranjang">🛒 <span class="badge" id="count">0</span></button>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="hero" id="beranda">
+    <div>
+      <h1>Upgrade level setup gaming kamu.</h1>
+      <p>Mouse, keyboard, headset, GPU, hingga kursi gaming. Barang original, garansi resmi. dikirim ke seluruh Indonesia.</p>
+      <p><a class="cta" href="#produk">Lihat produk</a></p>
+    </div>
+    <aside class="deck" aria-label="Paket setup">
+      <h3>Paket setup hemat</h3>
+      <ul>
+        <li><span>Mouse + Mousepad XL</span><span>Rp 549.000</span></li>
+        <li><span>Keyboard + Headset</span><span>Rp 1.299.000</span></li>
+        <li><span>Monitor 165Hz + Arm</span><span>Rp 2.799.000</span></li>
+      </ul>
+    </aside>
+  </section>
+
+  <section id="produk" aria-label="Katalog produk">
+    <div class="tools">
+      <input id="q" type="search" placeholder="Cari produk, mis. keyboard" aria-label="Cari produk">
+      <select id="sort" aria-label="Urutkan">
+        <option value="pop">Terpopuler</option>
+        <option value="low">Harga terendah</option>
+        <option value="high">Harga tertinggi</option>
+        <option value="name">Nama A–Z</option>
+      </select>
+    </div>
+    <div class="chips" id="chips"></div>
+    <div class="grid" id="grid"></div>
+  </section>
+
+  <section class="perks">
+    <div><strong>Garansi resmi</strong>Klaim mudah di service center.</div>
+    <div><strong>Pengiriman aman</strong>Packing kayu untuk hardware.</div>
+    <div><strong>Cicilan 0%</strong>Tersedia untuk kartu kredit tertentu.</div>
+    <div><strong>Bantuan rakit PC</strong>Konsultasi gratis via chat.</div>
+  </section>
+
+  <section id="tentang" class="about" aria-label="Tentang kami">
+    <h2>Tentang Tamaastore.id</h2>
+    <div class="two">
+      <div>
+        <p>Tamaastore.id berdiri sejak 2021 dari satu hal sederhana: merupakan toko online yang
+            menyediakan berbagai aksesoris dan hardware
+            gaming untuk memenuhi kebutuhan para gamer.</p>
+        <p>Semua produk kami berasal dari distributor resmi, dicek sebelum dikirim, dan dilindungi garansi. Tim kami juga main game, jadi kami bisa membantu memilih mouse, keyboard, atau komponen PC yang cocok dengan budget dan gaya mainmu.</p>
+      </div>
+      <div class="stats">
+        <div><strong>5.000+</strong>pesanan terkirim</div>
+        <div><strong>4,5/5</strong>rating pelanggan</div>
+        <div><strong>100%</strong>produk original</div>
+        <div><strong>34</strong>provinsi terjangkau</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="kontak" class="contact" aria-label="Kontak">
+    <h2>Hubungi kami</h2>
+    <div class="two">
+      <div class="cinfo">
+        <div><strong>Alamat toko</strong>Jl. Merak No. 10, Kota Madiun</div>
+        <div><strong>WhatsApp</strong><a href="https://wa.me/62881026564981" target="_blank" rel="noopener">0881-0265-64981</a></div>
+        <div><strong>Email</strong><a href="mailto:halo@tamaastore.id">halo@tamaastore.id</a></div>
+        <div><strong>Jam operasional</strong>Senin–Jum'at 08.00–21.00 WIB<br>Sabtu-Minggu Online</div>
+        <div><strong>Media sosial</strong><a href="#kontak">Instagram @tamaastore.id</a> · <a href="#kontak">TikTok @tamaastore.id</a></div>
+      </div>
+      <div class="cform">
+        <label for="cn">Nama</label><input id="cn" autocomplete="name">
+        <label for="ce">Email</label><input id="ce" type="email" autocomplete="email">
+        <label for="cm">Pesan</label><textarea id="cm" rows="4"></textarea>
+        <p id="cmsg" class="meta" role="status"></p>
+        <button class="cta" id="csend">Kirim pesan</button>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap fgrid">
+    <div><strong>TamaaStore.id</strong><br>Toko aksesoris dan hardware gaming.</div>
+    <div><strong>Menu</strong><br><a href="#beranda">Beranda</a> · <a href="#produk">Produk</a> · <a href="#tentang">Tentang</a> · <a href="#kontak">Kontak</a></div>
+    <div><strong>Kontak</strong><br>0881-0265-64981<br>halo@tamaastore.id</div>
+  </div>
+  <div class="wrap copy">© 2026 TamaaStore.id All Rights Reserved.</div>
+</footer>
+
+<div id="scrim"></div>
+<aside id="drawer" aria-label="Keranjang belanja">
+  <div class="drawer-head"><h2>Keranjang</h2><button class="ib" id="closeCart" aria-label="Tutup keranjang">✕</button></div>
+  <div id="items"></div>
+  <div class="total"><span>Total</span><span id="total">Rp 0</span></div>
+  <button class="cta" id="checkout">Checkout</button>
+</aside>
+<div id="modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="mTitle" hidden>
+  <div class="box">
+    <div id="mBody"></div>
+  </div>
+</div>
+<div id="toast" role="status"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
